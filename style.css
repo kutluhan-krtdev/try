@@ -1,168 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
     font-size: 10px;
-    background-color: #1C1C1C;
+    background-color: #0B1020;
 }
 
 a{
     text-decoration: none;
 }
 
-/* NAVBAR */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    width: 100%;
-    background-color: #0e0e0e;
-    padding: 0px 30px;
+    padding: 25px 25px;
 }
 
 nav ul{
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 45px;
-    font-size: 1.4rem;
-    font-weight: 300;
 }
 
 nav ul a{
-    color: #fff;
-}
-
-nav p{
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
-#home{
-    background: hsla(0, 0%, 40%, 1);
-    background: radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
-    background: -moz-radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
-    background: -webkit-radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#676767", endColorstr="#3B3B3B", GradientType=1 );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 255px;
-    height: 100vh;
-    width: 100%;
-}
-
-#home .text-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    color: #fff;
-}
-
-#home .text-area h1{
-    font-size: 3.4rem;
-    font-weight: 700;
-}
-
-#home .text-area p{
-    font-size: 2rem;
-    margin-top: -15px;
-    font-weight: 200;
-}
-
-#home .text-area .btns{
-        margin-top: 25px;
-}
-
-#home .text-area .btns a{
-    background-color: #FF7900;
-    padding: 10px 40px;
-    border-radius: 55px;
-    color: #fff;
-    font-size: 1.3rem;
-    margin: 0px 5px;
-}
-
-#home .text-area .social-area{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 1.7rem;
-    margin-top: 100px;
-}
-
-#home .text-area .social-area a{
-    color: #FF7900;
-}
-
-#home .home-img{
-    background-color: #FF7900;
-    border-radius: 50%;
-}
-
-#about{
-    background-color: #FF7900;
-    height: 100vh;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-
-
-
-@media screen and (max-width: 905px) {
-    nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-   nav ul a{
-    font-size: 1rem;
-    justify-content: center;
-   }
-
-   nav p{
-    display: none;
-   }
-   
-   
-    #home{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-   }
-
-   #home .text-area h1{
-    font-size: 2.3rem;
-   }
-
-   #home .text-area p{
     font-size: 1.4rem;
-   }
-
-   #home .text-area .btns a{
-    background-color: #FF7900;
-    padding: 5px 20px;
-    border-radius: 55px;
-    color: #fff;
-    font-size: 0.9rem;
-    margin: 0px 5px;
+    font-weight: 400;
+    color: #9AA7BF;
 }
 
-    #home .social-area a{
-        font-size: 1.4rem;
-    }
+.work-btn{
+    color: #9AA7BF;
+    background-color: #0F1724;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 105px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -6px rgba(154,167,191,0.5);
+    transition: all ease 0.4s;
+}
 
-    #home .home-img, img{
-        height: 200px;
-        width: 200px;
-    }
+.work-btn:hover{
+    background-color: transparent;
+    border: 1px solid #9AA7BF;
+    transition: all ease 0.4s;;
+}
+
+.hero{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.hero p{
+    color: #9AA7BF;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.hero .work-btn{
+    margin-top: 85px;
+}
+
+.hero .social-media{
+    display: flex;
+    list-style: none;
+    color: #9AA7BF;
+    font-size: 1.6rem;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.hero .social-media i{
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.hero .social-media i:hover{
+    color: #fff;
+    transition: all ease 0.4s;
 }
